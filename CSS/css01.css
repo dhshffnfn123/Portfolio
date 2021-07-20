@@ -129,3 +129,29 @@ body { /* 빈 공간 채우기 */
 
 
 /* -------------------------------------- PROJECTS -------------------------------------- */
+
+#project {
+    margin: auto;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 1500px;
+    height: 1000px;
+}
+
+#project :first-child {
+    background-color: wheat;
+}
+
+#project :nth-child(2) {
+    background-color: yellowgreen;
+}
+#project :nth-child(3) {
+    background-color: aquamarine;
+}
+#project :nth-child(4) {
+    background-color: darkcyan;
+}
