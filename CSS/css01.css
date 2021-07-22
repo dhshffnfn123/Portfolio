@@ -4,6 +4,7 @@ body { /* 빈 공간 채우기 */
     margin-left: 0;
     margin-right: 0;
     overflow-x: hidden; overflow-y: auto; /* 가로 스크롤 없애기 */
+    
   }
 
 
@@ -79,11 +80,17 @@ body { /* 빈 공간 채우기 */
 
 /* -------------------------------------- ABOUT -------------------------------------- */
 
-#text_about {
+#text_title {
     font-size: 60px;
     font-weight: bolder;
     color: rgb(39, 39, 39);
     text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     
 }
 
@@ -132,12 +139,12 @@ body { /* 빈 공간 채우기 */
 
 #project {
     margin: auto;
-    background-color: black;
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
     width: 1500px;
     height: 1000px;
 }
@@ -155,3 +162,83 @@ body { /* 빈 공간 채우기 */
 #project :nth-child(4) {
     background-color: darkcyan;
 }
+
+/* -------------------------------------- CONNECT -------------------------------------- */
+
+#shape_top {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(-55deg, #f3f5f0 80%, #dfe8eb 20%); /* 대각선으로 div 색칠하기*/
+}
+
+#shape_bottom {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(-125deg, #f3f5f0 80%, #dfe8eb 20%); /* 대각선으로 div 색칠하기*/
+}
+
+#send_box {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #dfe8eb;
+    z-index: 50;
+    top: -800px;
+    margin: auto;
+    display: grid;
+    padding: 20px;
+    row-gap: 20px;
+    grid-template-rows: 1fr 1fr 400px 30px;
+}
+
+#send_box > * {
+    border: none;
+    font-size: 25px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#submit {
+    position: relative;
+    background: transparent;
+    margin: auto;
+    width: 200px;
+    top: -5px;
+    font-size: 30px;
+    border: black solid 3px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 입체 사각형 패턴
+background-color: #555;
+background-image: linear-gradient(30deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(150deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(30deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(150deg, #444 12%, transparent 12.5%, transparent 87%, #444 87.5%, #444), linear-gradient(60deg, #888 25%, transparent 25.5%, transparent 75%, #888 75%, #888), linear-gradient(60deg, #888 25%, transparent 25.5%, transparent 75%, #888 75%, #888);
+background-position: 0 0, 0 0, 25px 50px, 25px 50px, 0 0, 25px 50px;
+background-size: 50px 100px;
+*/
+/* 삼각형 만들기
+width: 0;
+height: 0;
+border-top: 100px #2a333d solid;
+border-right: 1000px  transparent;
+border-bottom: 100px  transparent;
+border-left: 100px solid transparent;
+*/
