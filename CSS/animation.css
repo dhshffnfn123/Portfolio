@@ -1,0 +1,61 @@
+
+/* ---------------------------------- title --------------------------------- */
+
+#first {
+    animation: title_color 2s forwards;
+}
+#box {
+    animation: title_color 2s forwards;
+}
+
+.text1 {
+    animation: title_text_anim 2s 2s forwards;
+    margin-top: -100px;
+}
+.text2 {
+    animation: title_text_anim 2s 3s forwards;
+    margin-top: -100px;
+}
+
+#viewBtn {
+    animation: title_btn_anim 2s 4s forwards;
+    margin-top: 100px;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  keyframes                                 */
+/* -------------------------------------------------------------------------- */
+
+
+/* ---------------------------------- title --------------------------------- */
+@keyframes title_color {
+    from {
+        background-color: rgb(0, 0, 0);
+    }
+    to {
+        background-color: #2a333d;
+    }
+}
+
+@keyframes title_text_anim {
+    0% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@keyframes title_btn_anim {
+    0% {
+        margin-top: 100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+ /* ------------------------------------------------------------------------- */
