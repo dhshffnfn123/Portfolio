@@ -6,8 +6,9 @@ body { /* 빈 공간 채우기 */
     margin-left: 0;
     margin-right: 0;
     overflow-x: hidden; overflow-y: auto; /* 가로 스크롤 없애기 */
-    
   }
+
+  
 
 
 /* --------------------------------------------------- HOME -----------------------------------------*/
@@ -83,27 +84,32 @@ body { /* 빈 공간 채우기 */
     border-color: white white white white; /* 테두리 상 우 하 좌*/
     background: transparent; /* transparent : 투명 */
     cursor: pointer; /* 마우스 손모양으로 만들기 */
+    transition: all 0.9s;
 }
 
 
 
-/* -------------------------------------- header -------------------------------------- */
+/* -------------------------------------- NAVI -------------------------------------- */
 
-#header {
+nav {
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-color: #061425;
-    padding: 25px 0 20px 80px;
-    border-bottom: springgreen solid 8px;
+    padding: 10px 0 20px 80px;
+    border-bottom: rgb(14, 255, 126) solid 6px;
     
 }
 
-#header > * {
+nav > * {
     float: left;
     font-size: 30px;
+    font-weight: 500;
     color: white;
     background-color: #061425;
     padding-right: 80px;
+    letter-spacing: 2px; /* 글자 간 간격 */
+    cursor: pointer;
+    transition: all 0.9s;
 }
 
 
@@ -268,4 +274,10 @@ border-top: 100px #2a333d solid;
 border-right: 1000px  transparent;
 border-bottom: 100px  transparent;
 border-left: 100px solid transparent;
+
+
+div에 가운데부분에 텍스트 위치 시키기
+display: flex;
+justify-content: center;
+align-items: center;
 */

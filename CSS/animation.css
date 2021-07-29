@@ -2,26 +2,49 @@
 /* ---------------------------------- title --------------------------------- */
 
 #first {
-    animation: title_color 2s forwards;
+    animation: title_color 1s forwards;
 }
 #box {
-    animation: title_color 2s forwards;
+    animation: title_color 1s forwards;
 }
 
 .text1 {
-    animation: title_text_anim 2s 2s forwards;
+    animation: title_text_anim 2s 1s forwards;
     margin-top: -100px;
 }
 .text2 {
-    animation: title_text_anim 2s 3s forwards;
+    animation: title_text_anim 2s 2s forwards;
     margin-top: -100px;
 }
 
+#viewBtn:hover {
+    color: #2a333d;
+    background: white;
+    font-weight: bolder;
+}
+
 #viewBtn {
-    animation: title_btn_anim 2s 4s forwards;
+    animation: title_btn_anim 2s 3s forwards;
     margin-top: 100px;
 }
 
+
+/* ---------------------------------- navi ---------------------------------- */
+.fix {
+    position:fixed;
+    animation: down 0.5s ease;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.color {
+    color: rgb(223, 11, 135);
+}
+
+nav > *:hover  {
+    color: rgb(223, 11, 135);
+}
 
 
 
@@ -31,7 +54,7 @@
 
 
 /* ---------------------------------- title --------------------------------- */
-@keyframes title_color {
+@keyframes title_color { /* 접속 시 배경색 */
     from {
         background-color: rgb(0, 0, 0);
     }
@@ -40,7 +63,7 @@
     }
 }
 
-@keyframes title_text_anim {
+@keyframes title_text_anim {    /* 접속시 글자 나옴 */
     0% {
         margin-top: -100px;
     }
@@ -49,7 +72,7 @@
     }
 }
 
-@keyframes title_btn_anim {
+@keyframes title_btn_anim { /* 접속 시 버튼 나옴 */
     0% {
         margin-top: 100px;
     }
@@ -58,4 +81,14 @@
     }
 }
 
- /* ------------------------------------------------------------------------- */
+
+
+ /* ---------------------------------- navi ---------------------------------- */
+ @keyframes down {
+    0%{
+      transform: translateY(-50px)
+    }
+    100%{
+      transform: translateY(0px)
+    }
+  }

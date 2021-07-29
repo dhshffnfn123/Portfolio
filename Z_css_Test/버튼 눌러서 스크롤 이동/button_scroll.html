@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Javascript scrollIntoView Example</title>
+  <style>
+
+    .menu {
+      position : fixed;
+      top: 0;
+      width : 100%;
+      display :flex;
+      list-style : none;
+      justify-content : space-around;
+      align-items : center;
+      padding : 20px 0;
+      background-color: aqua;
+      padding-left : 0;
+    }
+    
+    .menu li {
+      cursor: pointer;
+    }
+    .content {
+      height: 50vh;
+    }
+    #section1 {
+      background : orange;
+    }
+    #section2 {
+      background : green;
+    }
+    #section3 {
+      background : blue;
+    }
+    #section4 {
+      background : yellow;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li data-link="#section1">menu1</li>
+    <li data-link="#section2">menu2</li>
+    <li data-link="#section3">menu3</li>
+    <li data-link="#section4">menu4</li>
+  </ul>
+  <div class="container">
+    <div id="section1" class="content"></div>
+    <div id="section2" class="content"></div>
+    <div id="section3" class="content"></div>
+    <div id="section4" class="content"></div>
+  </div>
+  <script>
+    document.querySelector('.menu').addEventListener('click',e=>{
+    if(e.target.nodeName === 'LI'){
+      let id_value = e.target.dataset.link;
+      document.querySelector(id_value).scrollIntoView({behavior : 'smooth'});
+    }
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body{margin: 0;}
+
+.menu {
+    width: 200px; height: 50px;
+    position: fixed; left: 50px;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.menu > span:hover {
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+.content {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-child(2) {background-color: coral;}
+div:nth-child(3) {background-color: violet;}
+div:nth-child(4) {background-color: teal;}
