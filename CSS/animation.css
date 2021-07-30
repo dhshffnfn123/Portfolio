@@ -38,10 +38,6 @@
     z-index: 999;
 }
 
-.color {
-    color: rgb(223, 11, 135);
-}
-
 nav > *:hover  {
     color: rgb(223, 11, 135);
 }

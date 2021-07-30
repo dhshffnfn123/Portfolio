@@ -13,7 +13,7 @@ window.onload = function navi_fix() {
         const nav = document.querySelector('nav');
 
         if(1100 <= scrollposition) { 
-            nav.classList.add('fix');
+            nav.classList.add('fix'); // nav태그에 미리 정의해둔 fix 클래스를 넣는다
         } else {
             nav.classList.remove('fix');
         }

@@ -145,7 +145,7 @@ nav > * {
 }
 
 #my_info {
-    background-color: teal;
+    background-color: transparent;
     height: 700px;
     display: grid;
     grid-template-rows: 5fr 3fr;
@@ -157,9 +157,11 @@ nav > * {
 }
 
 #me {
-    background-color: thistle;
-    width: 400px;
-    height: 400px;
+    background-image: url(../assets/me.jpg);
+    background-repeat: no-repeat; /* 이미지 반복 안되게 */
+    background-size: contain;
+    width: 375px;
+    height: 500px;
     margin: auto;
 }
 
