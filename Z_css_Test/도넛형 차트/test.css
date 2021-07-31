@@ -1,0 +1,20 @@
+.a1{
+    margin:1000px 0;
+    display:flex;
+  }
+  .second {
+    position:relative;
+    width:100px;
+    height:100px;
+    margin-left:50px;
+  }
+  .second>canvas{
+    width:100%;
+  }
+  .second > strong {
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translatex(-50%) translatey(-50%);
+    font-size:2rem;
+  }

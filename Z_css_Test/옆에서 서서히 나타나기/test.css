@@ -1,0 +1,45 @@
+
+
+#left {
+    position: relative;
+    background-color: coral;
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    z-index: -10;
+    animation: slow_appear 3s forwards; /* keyframes_name 진행시간 옵션(forward : 애니메이션 진행 후 스타일 적용) */
+}
+
+#relative {
+    position: relative;
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+   
+}
+
+#absolute {
+    position: absolute;
+    background-color: darkblue;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    
+}
+
+
+
+
+
+@keyframes slow_appear {
+    0% {
+        opacity: 0%; /* 불투명도 설정 : 0%는 없어짐  */
+        left: 100px;
+    }
+    100% {
+        opacity: 100%;
+        left: 500px;
+    }
+}
