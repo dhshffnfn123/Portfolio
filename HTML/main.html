@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My PORTFOLIO</title>
+
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/animation.css">
-    <script src="../JS/navi.js"></script>
+
     
+    <script src="../JS/navi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
@@ -57,16 +62,57 @@
             <div id="skills">
                 <div id="skill_header">SKILL</div>
                 <ul type="square" id="list">
-                    <li class="lists">HTML</li>
-                    <li class="lists">CSS</li>
-                    <li class="lists">JS</li>
-                    <li class="lists">JSP</li>
-                    <li class="lists">Spring</li>
-                    <li class="lists">SQL</li>
-                    <li class="lists">Github</li>
+                    <li class="lists">
+                        <span class="list_name">HTML</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">CSS</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">JS</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">JSP</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">Spring</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">SQL</span>
+                    </li>
+                    <li class="lists">
+                        <span class="list_name">GitHub</span>
+                    </li>
                 </ul>
             </div>
-            <div id="skill"></div>
+            <div id="skill">
+                <div class="pie-chart pie-chart1"><span class="center">80%</span></div>
+                <div id="skill_name">
+                    Select Skill 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    HTML
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    CSS
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Java Script
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    JSP
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Spring
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    SQL
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    GitHub
+                    
+                </div>
+            </div>
         </div>
     </div>
     
@@ -109,6 +155,7 @@
     </div>
     
     
+    <script src="../JS/skillchart.js"></script>
     <script src="../JS/navicolor.js"></script>
     <script src="../JS/naviscroll.js"></script>
     

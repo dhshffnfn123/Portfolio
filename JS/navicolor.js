@@ -22,6 +22,8 @@ window.addEventListener('scroll', () => {
     } else if (scrollLocation >= 0 && scrollLocation <= 200) { /* HOME */
         navs[0].style.color=nav_color;
 
+        
+
     } else {
         navs[0].style.color="white";
         navs[1].style.color="white";
