@@ -49,6 +49,15 @@
     color: red;
 }
 
+.select { margin-left: 2450px; }
+.html { margin-left: 1650px; }
+.css { margin-left: 1000px; }
+.js { margin-left: 230px;}
+.jsp { margin-left: -530px;}
+.spring { margin-left: -1185px;}
+.sql { margin-left: -1855px;}
+.git { margin-left: -2530px;}
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -95,3 +104,7 @@
       transform: translateY(0px)
     }
   }
+
+  /* ---------------------------------- about --------------------------------- */
+
+ 

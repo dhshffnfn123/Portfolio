@@ -292,8 +292,12 @@ nav > * {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: rgb(14, 255, 126);
-    z-index: 99;
+    overflow: hidden;
+    z-index: 3;
+}
+
+#text_list {
+    transition: all 0.9s;
   }
 
 #list {
