@@ -9,6 +9,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Righteous&family=Staatliches&display=swap');
 /* font-family: 'Righteous', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+/* font-family: 'Do Hyeon', sans-serif; */
+
 
 
 /* ----------------------------------- ETC ---------------------------------- */
@@ -172,11 +175,11 @@ nav > * {
 
 #introduce {
     position: absolute;
-    background-color: rgb(237, 243, 243);
+    background-color: white;
     width: 350px;
     height: 500px;
     border-radius: 10px;
-    border: rgb(2, 104, 129) 5px solid;
+    border: black 5px solid;
     left: 100px;
     /* box-shadow: rgb(4, 129, 98) 0 0 10px; */
     z-index: 30;
@@ -200,16 +203,67 @@ nav > * {
 
 #info {
     position: relative;
-    background-color: rgb(253, 237, 237);
+    background-color: white;
     width: 350px;
     height: 500px;
     border-radius: 10px;
-    border: rgb(110, 1, 1) 5px solid;
+    border: black 5px solid;
     top: -340px;
     left: 600px;
     /* box-shadow: crimson 0 0 10px; */
     z-index: 30;
 }
+
+#skill_info_box {
+    position: absolute;
+    
+    width: 100px;
+    height: 280px;
+    margin-left: 650px;
+    margin-top: 40px;
+    transition: all 1s;
+}
+
+#skill_info_box:hover {
+    
+    margin-top: -80px;
+}
+
+#skill_bookmark {
+    position: relative;
+    background-color: white;
+    width: 100px;
+    height: 45px;
+    border-top: black 5px solid;
+    border-left: black 5px solid;
+    border-right: black 5px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    
+    z-index: 20;
+}
+#skill_info {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    top: -5px;
+    right: 310px;
+    border: solid black 5px;
+    border-top-left-radius: 10px;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
 
 #skill {
     
@@ -221,6 +275,8 @@ nav > * {
     top: 80px;
     border-radius: 10px;
     border: black 5px solid;
+
+    z-index: 30;
     
 }
 #skills {
@@ -243,6 +299,7 @@ nav > * {
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+    
 }
 
 .pie-chart {
@@ -275,9 +332,10 @@ nav > * {
   }
 
   #skill_name {
+    border-bottom: black 8px solid;
     position: relative;
     width: 400px;
-    height: 120px;
+    height: 100px;
     top: 50px;
     left: 100px;
     display: flex;
@@ -308,9 +366,9 @@ nav > * {
    
 }
 
-.lists {
-   padding-bottom: 55px;
-}
+.select { margin-left: 2780px; }
+
+.lists { padding-bottom: 45px; }
 
 .list_name {
     transition: all 0.2s;

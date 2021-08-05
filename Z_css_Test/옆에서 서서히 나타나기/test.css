@@ -19,9 +19,9 @@
 }
 
 #absolute {
-    position: absolute;
+    position: relative;
     background-color: darkblue;
-    top: 50px;
+    top: -50px;
     left: 50px;
     width: 100px;
     height: 100px;
