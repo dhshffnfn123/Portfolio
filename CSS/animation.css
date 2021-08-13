@@ -1,12 +1,12 @@
 
 /* ---------------------------------- title --------------------------------- */
 
-#first {
+/* #first {
     animation: title_color 1s forwards;
 }
 #box {
     animation: title_color 1s forwards;
-}
+} */
 
 .text1 {
     animation: title_text_anim 2s 1s forwards;
@@ -46,7 +46,7 @@
 /* ---------------------------------- about --------------------------------- */
 
 .list_name:hover {
-    color: red;
+    color: rgba(255, 0, 0, 0.582);
 }
 
 
@@ -62,10 +62,10 @@
 /* ---------------------------------- title --------------------------------- */
 @keyframes title_color { /* 접속 시 배경색 */
     from {
-        background-color: rgb(0, 0, 0);
+        background: linear-gradient(to right, blue , white);
     }
     to {
-        background-color: #2a333d;
+        background: linear-gradient(to right, black , white);
     }
 }
 

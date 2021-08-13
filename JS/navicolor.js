@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
    // console.log('Current Location : ' + scrollLocation); // 스크롤의 현재 위치 확인 ABout page : 1116
     if (scrollLocation >= 529 && scrollLocation <= 1500) {  /* ABOUT */
         //console.log('This is ABOUT');   // ABOUT 메서드 구동 확인
-        document.querySelector('#me').style.backgroundColor="black"; // 스크롤의 위치가 if문안에 조건에 들면 검은색으로 바뀜
+       /*  document.querySelector('#me').style.backgroundColor="black"; */ // 스크롤의 위치가 if문안에 조건에 들면 검은색으로 바뀜
         navs[1].style.color=nav_color;
 
     } else if (scrollLocation >= 1700 && scrollLocation <= 3100) { /* PORTFOLIO */

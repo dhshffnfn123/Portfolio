@@ -22,6 +22,7 @@ body { /* 빈 공간 채우기 */
     margin-left: 0;
     margin-right: 0;
     overflow-x: hidden; overflow-y: auto; /* 가로 스크롤 없애기 */
+    background: linear-gradient(to right bottom, rgb(162, 162, 162),rgb(140, 140, 140), rgb(90, 90, 90), rgb(68, 68, 68) 40%, black);
   }
 
   .contents {
@@ -34,18 +35,20 @@ body { /* 빈 공간 채우기 */
 /* --------------------------------------------------- HOME -----------------------------------------*/
 #first {
     width: 100%;
-    height: 1000px;
+    height: 1030px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background: linear-gradient(to right bottom, rgb(182, 182, 182),rgb(140, 140, 140), rgb(100, 100, 100), rgb(68, 68, 68) 40%, black);
+
 }
 
 #box {
     width: 500px;
     height: 150px;
-    background-color: #2a333d;
+    background-color: transparent;
+    
     
 }
 
@@ -141,7 +144,7 @@ nav > * {
 #text_title {
     font-size: 60px;
     font-weight: bolder;
-    color: rgb(39, 39, 39);
+    color: rgb(180, 180, 180);
     text-align: center;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -149,14 +152,15 @@ nav > * {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    
+    text-shadow:rgb(58, 58, 58) -2px -2px 10px, black 10px 10px 10px;
 }
 
 #about_bottomBar {
     text-align: center;
     width: 500px;
     margin: auto;
-    border-bottom: rgb(39, 39, 39) solid 10px;
+    border-bottom: rgb(180, 180, 180) solid 10px;
+    box-shadow: rgb(90, 90, 90) -2px -2px 10px, black 10px 10px 10px;
 }
 
 /* -------------------------------------- ABOUT -------------------------------------- */
@@ -174,45 +178,59 @@ nav > * {
 }
 
 #introduce {
-    position: absolute;
-    background-color: white;
+    position: relative;
+    background-color: rgb(40, 40, 40);
     width: 350px;
     height: 500px;
     border-radius: 10px;
     border: black 5px solid;
-    left: 100px;
-    /* box-shadow: rgb(4, 129, 98) 0 0 10px; */
-    z-index: 30;
-}
-
-
-#me {
-    position: relative;
-    background-image: url(../assets/me.jpg);
-    background-repeat: no-repeat; /* 이미지 반복 안되게 */
-    background-size: contain;
-    width: 350px;
-    height: 466px;
-    top: 80px;
-    left: 350px;
-    border-radius: 10px;
-    border: black 5px solid;
-    /* box-shadow: rgb(0, 0, 0) 0 0 10px; */
-    z-index: 50;
+    top: 40px;
+    left: 500px;
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
+    z-index: 40;
 }
 
 #info {
     position: relative;
-    background-color: white;
+    background-color: rgb(80, 80, 80);
     width: 350px;
     height: 500px;
     border-radius: 10px;
     border: black 5px solid;
-    top: -340px;
-    left: 600px;
-    /* box-shadow: crimson 0 0 10px; */
+    top: -930px;
+    left: 550px;
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
     z-index: 30;
 }
+
+#me {
+    position: relative;
+    /* background-image: url(../assets/me.jpg); */
+    /* background-repeat: no-repeat; */ /* 이미지 반복 안되게 */
+    /* background-size: 300px; */
+    width: 350px;
+    height: 500px;
+    top: -370px;
+    left: 600px;
+    border-radius: 10px;
+    border: black 5px solid;
+    /* box-shadow: rgb(0, 0, 0) 0 0 10px; */
+    z-index: 10;
+    text-align: center;
+    vertical-align: middle;
+    background-color : rgb(120, 120, 120);
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
+}
+
+#me img {
+    position:absolute;
+    height: 410px;
+    width: 290px;
+    top: 45px;
+    right: 30px;
+    border: white 2px solid;
+}
+
 
 #skill_info_box {
     position: absolute;
@@ -221,6 +239,7 @@ nav > * {
     height: 280px;
     margin-left: 650px;
     margin-top: 40px;
+    box-shadow: rgb(47, 47, 47) -10px -2px 5px, black 10px 10px 10px;
     transition: all 1s;
 }
 
@@ -231,7 +250,7 @@ nav > * {
 
 #skill_bookmark {
     position: relative;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     width: 100px;
     height: 45px;
     border-top: black 5px solid;
@@ -239,6 +258,7 @@ nav > * {
     border-right: black 5px solid;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    color: rgb(120, 120, 120);
     right: 10px;
     display: flex;
     justify-content: center;
@@ -250,7 +270,7 @@ nav > * {
 }
 #skill_info {
     position: relative;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     width: 400px;
     height: 200px;
     top: -5px;
@@ -268,31 +288,32 @@ nav > * {
 #skill {
     
     position: relative;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     width: 600px;
     height: 600px;
     left: 140px;
     top: 80px;
     border-radius: 10px;
     border: black 5px solid;
-
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
     z-index: 30;
     
 }
 #skills {
     position: absolute;
-    
+    background: rgb(40, 40, 40);
+    color: rgb(120, 120, 120);
     width: 200px;
     height: 680px;
     border-radius: 10px;
     border: black 5px solid;
-    
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
 }
 
 #skill_header {
     width: 200px;
     height:  80px;
-    background-color: white;
+    background-color: rgb(40, 40, 40);
     font-size: 50px;
     font-family: 'Righteous', cursive;
     display: flex;
@@ -311,17 +332,19 @@ nav > * {
     transition: 0.3s;
     left: 100px;
     top: 40px;
+    box-shadow: rgb(173, 173, 173) -2px -2px 10px, black 10px 10px 10px;
   }
   
   span.center{
-    background: #fff;
+    background: rgb(40, 40, 40);
     display : block;
     position: absolute;
     top:50%; left:50%;
     width:300px; height:300px;
     border-radius: 50%;
+    font-family: 'Do Hyeon', sans-serif;
     text-align:center; line-height: 300px;
-    font-size:50px;
+    font-size:70px;
     transform: translate(-50%, -50%);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -332,7 +355,7 @@ nav > * {
   }
 
   #skill_name {
-    border-bottom: black 8px solid;
+    border-bottom: rgb(120, 120, 120) 8px solid;
     position: relative;
     width: 400px;
     height: 100px;
@@ -362,11 +385,11 @@ nav > * {
     padding-top: 5px;
     font-size: 22px;
     font-family: 'Righteous', cursive;
-    color: black;
+    color: rgb(120, 120, 120);
    
 }
 
-.select { margin-left: 2780px; }
+.select { margin-left: 2780px; color: rgb(120, 120, 120); }
 
 .lists { padding-bottom: 45px; }
 
